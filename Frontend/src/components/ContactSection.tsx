@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useToast } from "@/components/ui/use-toast";
+import { useToast } from "./ui/use-toast";
 import ActionText from "./ActionText";
 import { playSoundEffect } from "./SoundEffect";
 
