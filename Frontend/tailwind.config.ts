@@ -1,14 +1,13 @@
 import type { Config } from "tailwindcss";
 
 export default {
-  darkMode: ["class", "dark"],
+  darkMode: "class", // Use "class" for class-based dark mode switching
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
   ],
-  prefix: "",
   theme: {
     container: {
       center: true,
@@ -62,7 +61,6 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Comic theme colors
         comic: {
           red: "#EA384C",
           blue: "#1EAEDB",

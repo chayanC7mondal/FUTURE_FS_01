@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import Navigation from "../components/Navigation";
 import HeroSection from "../components/HeroSection";
-import AboutSection from "../components/AboutSection";
+import AboutSection from "../components/AboutSection.tsx";
 import TechStackSection from "../components/TechStackSection";
 import ProjectsSection from "../components/ProjectsSection";
 import ContactSection from "../components/ContactSection";
 import FooterSection from "../components/FooterSection";
-import SoundEffect from "../components/SoundEffect";
+// Removed: import SoundEffect from "../components/SoundEffect";
+
 import gsap from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -16,7 +17,6 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 const Index = () => {
   useEffect(() => {
-    // Set up scroll animations for each section
     const sections = ["about", "tech-stack", "projects", "contact"];
 
     sections.forEach((section) => {
@@ -37,14 +37,6 @@ const Index = () => {
 
   return (
     <div className="comic-portfolio">
-      {/* Sound Effects */}
-      <SoundEffect id="pop-sound" src="/sounds/pop.mp3" />
-      <SoundEffect id="zap-sound" src="/sounds/zap.mp3" />
-      <SoundEffect id="click-sound" src="/sounds/click.mp3" />
-      <SoundEffect id="card-sound" src="/sounds/card.mp3" />
-      <SoundEffect id="hover-sound" src="/sounds/hover.mp3" />
-      <SoundEffect id="send-sound" src="/sounds/send.mp3" />
-
       <Navigation />
       <HeroSection />
       <AboutSection />
