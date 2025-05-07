@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
-export default {
-  darkMode: "class", // Use "class" for class-based dark mode switching
+const config: Config = {
+  darkMode: "class", // Enables dark mode via class
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
@@ -61,6 +61,7 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // ✅ Custom comic color palette
         comic: {
           red: "#EA384C",
           blue: "#1EAEDB",
@@ -111,4 +112,6 @@ export default {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config;
+};
+
+export default config;

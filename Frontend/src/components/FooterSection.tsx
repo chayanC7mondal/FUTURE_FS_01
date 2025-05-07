@@ -7,28 +7,28 @@ const FooterSection: React.FC = () => {
   const footerRef = useRef(null);
   const iconsRef = useRef(null);
 
-  useEffect(() => {
-    // GSAP animation for footer entrance
-    gsap.from(footerRef.current, {
-      y: 50,
-      opacity: 0,
-      duration: 1,
-      ease: "power3.out",
-    });
+  // useEffect(() => {
+  //   // GSAP animation for footer entrance
+  //   gsap.from(footerRef.current, {
+  //     y: 50,
+  //     opacity: 0,
+  //     duration: 1,
+  //     ease: "power3.out",
+  //   });
 
-    // GSAP animation for icons
-    gsap.from(iconsRef.current?.children, {
-      scale: 0,
-      opacity: 0,
-      duration: 0.5,
-      stagger: 0.1,
-      ease: "back.out(1.7)",
-      delay: 0.5,
-    });
-  }, []);
+  //   // GSAP animation for icons
+  //   gsap.from(iconsRef.current?.children, {
+  //     scale: 0,
+  //     opacity: 0,
+  //     duration: 0.5,
+  //     stagger: 0.1,
+  //     ease: "back.out(1.7)",
+  //     delay: 0.5,
+  //   });
+  // }, []);
 
   return (
-    <footer ref={footerRef} className="bg-comic-black py-12 text-white">
+    <footer ref={footerRef} className="bg-comic-black py-12 text-yellow-50">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
