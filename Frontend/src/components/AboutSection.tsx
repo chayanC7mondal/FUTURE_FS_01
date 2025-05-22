@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import ActionText from "./ActionText";
 import hackinnovision from "../assets/hackinnovision.jpg";
+import hackinnovision2 from "../assets/hackinnovision2.jpeg";
+import hackodisha from "../assets/hackodisha.jpg";
 
 const AboutSection: React.FC = () => {
   return (
@@ -37,9 +39,14 @@ const AboutSection: React.FC = () => {
               Chapter 1: The Beginning
             </h3>
             <div className="mb-4 border-2 border-black bg-comic-blue h-40 flex items-center justify-center">
-              <span className="font-bangers text-white text-xl">
+              <img
+                src={hackodisha}
+                alt="img"
+                className="h-full w-full object-cover"
+              />
+              {/* <span className="font-bangers text-white text-xl">
                 PANEL IMAGE
-              </span>
+              </span> */}
             </div>
             <p className="font-comic">
               It all started with a{" "}
@@ -57,9 +64,14 @@ const AboutSection: React.FC = () => {
           >
             <h3 className="font-bangers text-2xl mb-3">Chapter 2: Power-Up</h3>
             <div className="mb-4 border-2 border-black bg-comic-red h-40 flex items-center justify-center">
-              <span className="font-bangers text-white text-xl">
+              <img
+                src={hackinnovision2}
+                alt="img"
+                className="h-full w-full object-cover"
+              />
+              {/* <span className="font-bangers text-white text-xl">
                 PANEL IMAGE
-              </span>
+              </span> */}
             </div>
             <p className="font-comic">
               Armed with knowledge and determination, I mastered the arts of{" "}
