@@ -28,7 +28,7 @@ This repo is powered by:
 
 ```bash
 # Clone the heroic repository
-git clone https://github.com/your-username/the-incredible-fullstack.git
+git clone [https://github.com/chayanC7mondal/FUTURE_FS_01.git]
 cd the-incredible-fullstack
 
 # Set up backend
