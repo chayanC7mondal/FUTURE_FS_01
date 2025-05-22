@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ActionText from "./ActionText";
+import hackinnovision from "../assets/hackinnovision.jpg";
 
 const AboutSection: React.FC = () => {
   return (
@@ -75,10 +76,15 @@ const AboutSection: React.FC = () => {
             transition={{ duration: 1 }}
           >
             <h3 className="font-bangers text-2xl mb-3">Chapter 3: Today</h3>
-            <div className="mb-4 border-2 border-black bg-comic-yellow h-40 flex items-center justify-center">
-              <span className="font-bangers text-white text-xl">
+            <div className="mb-4 border-2 border-black bg-comic-yellow h-40 flex items-center justify-center overflow-hidden">
+              <img
+                src={hackinnovision}
+                alt="img"
+                className="h-full w-full object-cover"
+              />
+              {/* <span className="font-bangers text-white text-xl absolute">
                 PANEL IMAGE
-              </span>
+              </span> */}
             </div>
             <p className="font-comic">
               Now I battle digital challenges and craft amazing web experiences

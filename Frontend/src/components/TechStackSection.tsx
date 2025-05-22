@@ -42,9 +42,9 @@ const TechStackSection: React.FC = () => {
       color: "bg-comic-red",
     },
     {
-      name: "DevOps",
+      name: "DSA",
       icon: <Globe strokeWidth={1.5} size={48} />,
-      superpower: "Cloud Summoning",
+      superpower: "Algo Wizard",
       color: "bg-comic-yellow",
     },
   ];

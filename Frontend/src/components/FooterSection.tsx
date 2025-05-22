@@ -32,7 +32,7 @@ const FooterSection: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <h2 className="font-bangers text-4xl">Developer Name</h2>
+            <h2 className="font-bangers-bold text-4xl ">Chayan Mondal</h2>
             <p className="font-comic mt-2">
               Fighting bugs and creating awesome web experiences
             </p>
@@ -40,7 +40,7 @@ const FooterSection: React.FC = () => {
 
           <div ref={iconsRef} className="flex gap-6">
             <a
-              href="#"
+              href="https://github.com/chayanC7mondal"
               aria-label="Github"
               className="h-12 w-12 bg-comic-panel rounded-full flex items-center justify-center border-2 border-white hover:bg-comic-yellow hover:text-comic-black transition-colors"
               onMouseEnter={() => playSoundEffect("pop-sound")}
@@ -48,7 +48,7 @@ const FooterSection: React.FC = () => {
               <Github className="text-comic-black" strokeWidth={2} />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/chayan-mondal-881962177/"
               aria-label="LinkedIn"
               className="h-12 w-12 bg-comic-panel rounded-full flex items-center justify-center border-2 border-white hover:bg-comic-blue hover:text-white transition-colors"
               onMouseEnter={() => playSoundEffect("pop-sound")}
@@ -64,7 +64,7 @@ const FooterSection: React.FC = () => {
               <Twitter className="text-comic-black" strokeWidth={2} />
             </a>
             <a
-              href="mailto:email@example.com"
+              href="mailto:chayanatwork07@gmail.com"
               aria-label="Email"
               className="h-12 w-12 bg-comic-panel rounded-full flex items-center justify-center border-2 border-white hover:bg-comic-yellow hover:text-comic-black transition-colors"
               onMouseEnter={() => playSoundEffect("pop-sound")}
@@ -76,7 +76,7 @@ const FooterSection: React.FC = () => {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="font-comic text-sm opacity-70">
-            &copy; {new Date().getFullYear()} Developer Superhero. All rights
+            &copy; {new Date().getFullYear()} Chayan Mondal. All rights
             reserved.
           </p>
           <p className="font-comic text-xs mt-2 opacity-70">
