@@ -18,26 +18,46 @@ const ContactSection: React.FC = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    playSoundEffect("send-sound");
+    try {
+      playSoundEffect("send-sound");
 
-    // Simulate form submission
-    setTimeout(() => {
+      const response = await fetch("http://localhost:5000/api/contacts", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        toast({
+          title: "Message Sent!",
+          description:
+            "Your distress signal has been received. I'll respond soon!",
+          duration: 5000,
+        });
+
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      } else {
+        throw new Error(data.message || "Failed to send message");
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
       toast({
-        title: "Message Sent!",
-        description:
-          "Your distress signal has been received. I'll respond soon!",
+        title: "Error!",
+        description: "Failed to send message. Please try again.",
         duration: 5000,
       });
-
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
-      });
-    }, 800);
+    }
   };
 
   return (
